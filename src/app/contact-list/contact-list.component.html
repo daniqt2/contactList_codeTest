@@ -1,0 +1,31 @@
+<div class="mainContainer">
+ <div class="listContainer">
+   <div *ngIf="notSelected " class= "list">
+        <mat-list>
+                <div><h1 text-align="center">My contacts <button class=" button" (click)="refresh()">Refresh</button></h1></div>
+                <div *ngIf="results.length<4" class="Loading">
+                    Loading
+                </div>
+                <span *ngIf="results.length>4">
+                <mat-list-item  *ngFor="let contact of results; let i index" (click)="getUser(i)" >
+                    <span><img mat-card-sm-image src="{{contact[0].picture.medium}}"></span>
+                     <span class="name" >{{contact[0].name.first}} {{contact[0].name.last}}</span>   
+                </mat-list-item>
+                </span>
+                <mat-divider [inset]="true"></mat-divider>
+        </mat-list>
+   </div>
+   <div  *ngIf="!notSelected " class= "list contactCard">
+         <mat-card *ngFor="let contact of selectedUser"> 
+             <mat-card-title>
+                 <h1 text-align="center">{{contact[0].name.first}} {{contact[0].name.last}}
+                        <img class="contctImg" mat-card-sm-image src="{{contact[0].picture.large}}">
+                 </h1></mat-card-title>
+             <mat-list-item class="cntct"><b>Phone: </b>  {{contact[0].cell}}  </mat-list-item>
+             <mat-list-item class="cntct"> <b>Email: </b> {{contact[0].email}}  </mat-list-item>
+             <mat-list-item class="cntct"> <b>Adress: </b>Address: {{address}}  </mat-list-item>
+             <button class="back button" (click)="goBack()">Back</button>
+         </mat-card>
+   </div>
+ </div>
+</div>

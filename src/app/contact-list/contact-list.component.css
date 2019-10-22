@@ -1,0 +1,161 @@
+
+.mainContainer{
+    position: absolute;
+    background-color:#BFC0C0;
+    width: 100%;; 
+    height:100%; 
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.listContainer{
+    display:flex;
+    position: relative;
+    background-color:	#FFFFFF; 
+    color: black;
+    width: 50%; 
+    height:80%; 
+    margin:auto;
+    align-self: center;
+    border-radius:20px;
+    -webkit-box-shadow: -1px 3px 24px -2px rgba(161,152,161,1);
+    -moz-box-shadow: -1px 3px 24px -2px rgba(161,152,161,1);
+    box-shadow: -1px 3px 24px -2px rgba(161,152,161,1);
+}
+
+.list{
+    position: relative;
+    display: flex;
+    align-content: center;
+    background-color:none;
+    width: 90%; 
+    height:85%; 
+    margin:auto;
+    align-self: center;
+    border-radius:20px;
+    overflow: scroll;
+}
+/* ul{
+    margin:auto;
+    width:98%;
+    margin-left:-10%;
+} */
+
+mat-list-item{
+    margin:10%;
+}
+ mat-card{
+ background: white !important;
+    width: 100% !important;
+    height:100% !important;
+    padding:1px !important;
+    align-content: center;
+} 
+
+mat-card h1 {
+    color:#23395B;
+    align-self: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+div .contactCard{
+    background-color: #FFFFFF !important;
+    justify-content: center !important;
+}
+
+.contctImg{
+    border: solid 2px #88A9AD;
+    margin-left:2%;
+    border-radius: 50%;
+}
+
+
+.contactCards{
+    margin:auto;
+    border-radius: 20px 20px 20px 20px !important;
+    align-self: center;
+    width: 95% !important;
+    margin: 2.5%;
+}
+
+
+mat-list{
+    margin:auto;
+    align-self: center;
+    width:100%;
+    align-items: center;
+}
+mat-list div  h1{
+    color:#23395B !important;
+   text-align: center;
+}
+
+.cntct{
+    color: #031926 !important;
+    margin-left:10%;
+    font-size:20px;
+}
+mat-list div  button{
+    display:inline-block;
+    padding:2%;
+    margin-right:10%;
+    float:right;
+ }
+
+ .button{
+    color:white !important;
+    background-color: #406E8E;
+    border:none;
+    border-radius:10px;
+ }
+
+ .button:hover{
+    cursor: pointer;
+}
+.back {
+     padding: 4% !important;
+     font-size:15px !important;
+     align-self: center;
+     margin-top:5%;
+ }
+ .loading{
+    font-size:40%;
+ }
+
+
+
+mat-list-item{
+    color:white !important;
+    color:#02577a !important;
+    height:10%;
+    padding-top:2% !important;
+    padding-bottom: 3% !important;
+    margin:1% !important;
+    margin-bottom: 3% !important;
+    padding-top: -3% !important;
+    border-bottom: solid 1px black;
+    font-size: 25px !important;
+}
+
+mat-list-item:hover{
+    cursor:pointer;
+}
+
+mat-divider{
+    color:black !important;
+}
+button{
+    margin-left: 2% !important;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.name{
+    width:60%;
+    margin-left: 10%;
+}
+
+
